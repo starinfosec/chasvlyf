@@ -1,0 +1,6 @@
+{
+  "name": "Chaskilyf",
+  "description": "Premium cold-pressed edible oils and artisanal Mahua Laddoos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
