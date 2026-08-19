@@ -34,8 +34,8 @@ export function Products() {
           </h2>
           <p className="font-body-md text-body-md text-on-surface-variant max-w-xl">
             {t(
-              "Discover our range of pure, cold-pressed oils. Every drop is packed with health and natural taste.",
-              "हमारे शुद्ध और कच्चे घानी तेलों को आज़माएँ। इनकी हर बूँद सेहत और स्वाद से भरपूर है।"
+              "Discover products inspired by India's natural resources and traditional food practices.",
+              "भारत के प्राकृतिक संसाधनों और पारंपरिक खाद्य प्रथाओं से प्रेरित उत्पादों की खोज करें।"
             )}
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ export function Products() {
                 {t("High Pungency", "तीखा स्वाद")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold hover:brightness-110 transition-all">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold hover:brightness-110 transition-all">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>
@@ -136,7 +136,7 @@ export function Products() {
                 {t("Nutty Flavor Profile", "पौष्टिक स्वाद")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>
@@ -149,12 +149,12 @@ export function Products() {
           <Link to={`/product/wild-forest-honey`} className="block cursor-pointer h-[280px] rounded-[32px] overflow-hidden mb-6 relative">
             <img
               className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:opacity-0"
-              src="https://images.unsplash.com/photo-1587049352851-8d4e89134780?w=800&q=80"
+              src="/honey.png"
               alt="Honey"
             />
             <img
               className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-              src="https://images.unsplash.com/photo-1557062402-273579178351?w=800&q=80"
+              src="/honey1.png"
               alt="Honey Secondary"
             />
           </Link>
@@ -176,7 +176,7 @@ export function Products() {
                 {t("100% Raw & Natural", "100% कच्चा और प्राकृतिक")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>
@@ -189,12 +189,12 @@ export function Products() {
           <Link to={`/product/mahua-nectar`} className="block cursor-pointer h-[280px] rounded-[32px] overflow-hidden mb-6 relative">
             <img
               className="absolute inset-0 w-full h-full object-cover transition-all duration-700 group-hover:opacity-0"
-              src="https://images.unsplash.com/photo-1628157790150-13f8d75e4e7e?w=800&q=80"
+              src="/nectar.png"
               alt="Nectar"
             />
             <img
               className="absolute inset-0 w-full h-full object-cover transition-all duration-700 opacity-0 group-hover:opacity-100 group-hover:scale-110"
-              src="https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800&q=80"
+              src="/nectar1.png"
               alt="Nectar Secondary"
             />
           </Link>
@@ -216,7 +216,7 @@ export function Products() {
                 {t("Forest Reserve", "वन रिजर्व")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>
@@ -257,7 +257,7 @@ export function Products() {
                 {t("Traditional Heritage", "पारंपरिक विरासत")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>
@@ -298,7 +298,7 @@ export function Products() {
                 {t("Modern Twist", "आधुनिक ट्विस्ट")}
               </li>
             </ul>
-            <button className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
+            <button onClick={() => window.open('https://wa.me/918767153572', '_blank')} className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 rounded-full font-label-bold">
               <span className="material-symbols-outlined">chat</span> {t("Enquire via WhatsApp", "WhatsApp से पूछें")}
             </button>
           </div>

@@ -9,8 +9,8 @@ export function Manufacturing() {
     const handleScroll = () => {
       const parallax = document.querySelectorAll<HTMLElement>('.parallax-bg');
       let offset = window.pageYOffset;
-      parallax.forEach(function(bg) {
-          bg.style.backgroundPositionY = (offset * 0.7) + "px";
+      parallax.forEach(function (bg) {
+        bg.style.backgroundPositionY = (offset * 0.7) + "px";
       });
     };
     window.addEventListener('scroll', handleScroll);
@@ -44,106 +44,334 @@ export function Manufacturing() {
             <div className="space-y-24">
               {/* Step 1 */}
               <div className="relative flex flex-col md:flex-row items-center group">
-                <div className="md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Seed Selection", "बीज चयन")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("We source only non-GMO, organic seeds from heritage farms across the golden plains, ensuring the DNA of purity in every drop.", "हम सुनहरे मैदानों के पार विरासत वाले खेतों से केवल गैर-जीएमओ, जैविक बीज प्राप्त करते हैं, हर बूंद में शुद्धता का डीएनए सुनिश्चित करते हैं।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">psychology_alt</span>
                 </div>
-                <div className="md:w-1/2 md:pl-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Seed Selection" src="https://images.unsplash.com/photo-1558237588-410cce508b47?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Seed Selection" src="/oil1.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 2 */}
               <div className="relative flex flex-col md:flex-row-reverse items-center group">
-                <div className="md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Pneumatic Cleaning", "वायवीय सफाई")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("Triple-stage air filtration removes dust and impurities without moisture, preserving the seed's natural moisture balance.", "ट्रिपल-स्टेज एयर फिल्ट्रेशन नमी के बिना धूल और अशुद्धियों को दूर करता है, बीज के प्राकृतिक नमी संतुलन को बनाए रखता है।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">air</span>
                 </div>
-                <div className="md:w-1/2 md:pr-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Pneumatic Cleaning" src="https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Pneumatic Cleaning" src="/oil2.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 3: Cold Press Extraction */}
               <div className="relative flex flex-col md:flex-row items-center group">
-                <div className="md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Cold Press Extraction", "कोल्ड प्रेस निष्कर्षण")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("Our traditional wooden 'Kachi Ghani' rotates at low RPM, ensuring temperatures never exceed 45°C to protect vital nutrients.", "हमारी पारंपरिक लकड़ी की 'कच्ची घानी' कम आरपीएम पर घूमती है, यह सुनिश्चित करती है कि महत्वपूर्ण पोषक तत्वों की रक्षा के लिए तापमान कभी भी 45 डिग्री सेल्सियस से अधिक न हो।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">settings_slow_motion</span>
                 </div>
-                <div className="md:w-1/2 md:pl-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Cold Press Extraction" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Cold Press Extraction" src="/oil3.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 4 */}
               <div className="relative flex flex-col md:flex-row-reverse items-center group">
-                <div className="md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Natural Filtration", "प्राकृतिक निस्पंदन")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("No chemicals. No solvents. Just pure gravity and cotton filters to achieve crystalline clarity without sacrificing the pungent aroma.", "कोई रसायन नहीं। कोई सॉल्वैंट्स नहीं। तीखी सुगंध का त्याग किए बिना क्रिस्टलीय स्पष्टता प्राप्त करने के लिए बस शुद्ध गुरुत्वाकर्षण और कपास फिल्टर।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">filter_alt</span>
                 </div>
-                <div className="md:w-1/2 md:pr-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Natural Filtration" src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Natural Filtration" src="/oil4.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 5 */}
               <div className="relative flex flex-col md:flex-row items-center group">
-                <div className="md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Quality Testing", "गुणवत्ता परीक्षण")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("Every batch undergoes 18 rigorous lab tests for peroxide value, iodine value, and nutrient density in our ISO-certified lab.", "हमारे आईएसओ-प्रमाणित प्रयोगशाला में पेरोक्साइड मूल्य, आयोडीन मूल्य और पोषक तत्व घनत्व के लिए हर बैच 18 कठोर प्रयोगशाला परीक्षणों से गुजरता है।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">biotech</span>
                 </div>
-                <div className="md:w-1/2 md:pl-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Quality Testing" src="https://images.unsplash.com/photo-1558237588-410cce508b47?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Quality Testing" src="/oil5.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 6 */}
               <div className="relative flex flex-col md:flex-row-reverse items-center group">
-                <div className="md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Aseptic Packaging", "सड़न रोकनेवाला पैकेजिंग")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("Packed in UV-protected glass bottles to prevent oxidation and ensure the oil remains fresh from our facility to your kitchen.", "ऑक्सीकरण को रोकने के लिए यूवी-संरक्षित कांच की बोतलों में पैक किया गया और यह सुनिश्चित किया गया कि तेल हमारी सुविधा से आपकी रसोई तक ताजा रहे।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">inventory_2</span>
                 </div>
-                <div className="md:w-1/2 md:pr-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Aseptic Packaging" src="https://images.unsplash.com/photo-1558237588-410cce508b47?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Aseptic Packaging" src="/oil6.jpeg" />
                   </div>
                 </div>
               </div>
               {/* Step 7 */}
               <div className="relative flex flex-col md:flex-row items-center group">
-                <div className="md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
                   <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Global Delivery", "वैश्विक वितरण")}</h3>
                   <p className="text-on-surface-variant font-body-md">{t("Climate-controlled logistics ensure that the delicate chemical composition of our oils is preserved throughout the journey.", "जलवायु-नियंत्रित रसद सुनिश्चित करती है कि हमारे तेलों की नाजुक रासायनिक संरचना पूरी यात्रा में संरक्षित रहे।")}</p>
                 </div>
-                <div className="absolute left-0 md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
                   <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">local_shipping</span>
                 </div>
-                <div className="md:w-1/2 md:pl-20">
-                  <div className="rounded-3xl overflow-hidden shadow-2xl h-48 border border-white/20">
-                    <img className="w-full h-full object-cover" alt="Global Delivery" src="https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop" />
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Global Delivery" src="/oil7.jpeg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="py-20 md:py-32 bg-surface-container-lowest relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none"></div>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="mb-20">
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">{t("Mahua: From Forest to Feast", "महुआ: जंगल से दावत तक")}</h2>
+            <div className="w-24 h-1 bg-secondary-container rounded-full"></div>
+          </div>
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-[31px] md:left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant/30 transform -translate-x-1/2"></div>
+            {/* Steps */}
+            <div className="space-y-24">
+
+              {/* Step 1 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Wild Foraging", "जंगली फोरेजिंग")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Our tribal partners carefully handpick fallen Mahua flowers from deep within the forest reserves before dawn.", "हमारे आदिवासी साथी भोर से पहले वन अभ्यारण्यों के भीतर से गिरे हुए महुआ के फूलों को सावधानीपूर्वक चुनते हैं।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">park</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Wild Foraging" src="/mahua1.png" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Sun Drying", "धूप में सुखाना")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("The fresh flowers are naturally sun-dried on clean beds to preserve their nutritional integrity and rich flavor profile.", "ताजे फूलों को उनके पोषण संबंधी अखंडता और समृद्ध स्वाद प्रोफ़ाइल को संरक्षित करने के लिए साफ बिस्तरों पर प्राकृतिक रूप से धूप में सुखाया जाता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">light_mode</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Sun Drying" src="/mahua2.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Traditional Extraction", "पारंपरिक निष्कर्षण")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Using time-honored tribal methods, the dried flowers are processed without chemicals to extract the pure Mahua essence.", "समय-सम्मानित आदिवासी विधियों का उपयोग करते हुए, सूखे फूलों को शुद्ध महुआ सार निकालने के लिए रसायनों के बिना संसाधित किया जाता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">agriculture</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Traditional Extraction" src="/mahua3.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Cold Filtration", "कोल्ड निस्पंदन")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("The extract undergoes a gravity-fed cold filtration process to remove impurities while retaining beneficial enzymes.", "अर्क लाभकारी एंजाइमों को बनाए रखते हुए अशुद्धियों को दूर करने के लिए गुरुत्वाकर्षण-आधारित कोल्ड निस्पंदन प्रक्रिया से गुजरता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">filter_alt</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Cold Filtration" src="/mahua4.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Quality Assurance", "गुणवत्ता आश्वासन")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Each batch is tested for purity, moisture content, and authentic aroma to meet our stringent standards.", "प्रत्येक बैच का हमारे कड़े मानकों को पूरा करने के लिए शुद्धता, नमी सामग्री और प्रामाणिक सुगंध के लिए परीक्षण किया जाता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">verified</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Quality Assurance" src="/mahua5.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 6 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Sealed Freshness", "सीलबंद ताजगी")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Packaged in eco-friendly bottles, ensuring the Mahua's natural goodness is delivered straight to your home.", "पर्यावरण के अनुकूल बोतलों में पैक किया गया, यह सुनिश्चित करते हुए कि महुआ की प्राकृतिक अच्छाई सीधे आपके घर तक पहुंचाई जाए।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">inventory_2</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Sealed Freshness" src="/mahua6.jpeg" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="py-20 md:py-32 bg-surface-container-lowest relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none"></div>
+        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+          <div className="mb-20">
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">{t("Nectar & Honey: Pure & Untouched", "नेक्टर और शहद: शुद्ध और अछूता")}</h2>
+            <div className="w-24 h-1 bg-secondary-container rounded-full"></div>
+          </div>
+          <div className="relative">
+            {/* Timeline Line */}
+            <div className="absolute left-[31px] md:left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant/30 transform -translate-x-1/2"></div>
+            {/* Steps */}
+            <div className="space-y-24">
+
+              {/* Step 1 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Deep Forest Sourcing", "गहरे जंगल की सोर्सिंग")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("We source our honey from wild bee colonies thriving in untouched, pesticide-free forest environments.", "हम अपना शहद अछूते, कीटनाशक मुक्त जंगल के वातावरण में पनपने वाली जंगली मधुमक्खी कॉलोनियों से प्राप्त करते हैं।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">forest</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Deep Forest Sourcing" src="/honey1.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Sustainable Harvesting", "सतत संचयन")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Skilled tribal honey gatherers use ethical harvesting methods that protect the bees and their natural habitat.", "कुशल आदिवासी शहद इकट्ठा करने वाले नैतिक संचयन विधियों का उपयोग करते हैं जो मधुमक्खियों और उनके प्राकृतिक आवास की रक्षा करते हैं।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">eco</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Sustainable Harvesting" src="/honey2.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Raw & Unheated", "कच्चा और बिना गरम किया हुआ")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Our honey is never pasteurized or subjected to high heat, preserving all natural pollens, enzymes, and antioxidants.", "हमारा शहद कभी पाश्चुरीकृत या उच्च गर्मी के अधीन नहीं होता है, जो सभी प्राकृतिक पराग, एंजाइम और एंटीऑक्सिडेंट को संरक्षित करता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">thermostat</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Raw & Unheated" src="/honey3.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Natural Straining", "प्राकृतिक छानना")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("The raw honey is gently passed through natural cloth filters to remove beeswax and debris without chemical processing.", "रासायनिक प्रसंस्करण के बिना मोम और मलबे को हटाने के लिए कच्चे शहद को प्राकृतिक कपड़े के फिल्टर से धीरे से गुजारा जाता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">opacity</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Natural Straining" src="/honey4.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="relative flex flex-col md:flex-row items-center group">
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20 mb-8 md:mb-0 text-left md:text-right">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Purity Testing", "शुद्धता परीक्षण")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("Every batch is verified in our labs to ensure zero added sugars, adulterants, or artificial flavors.", "शून्य अतिरिक्त शर्करा, मिलावट या कृत्रिम स्वादों को सुनिश्चित करने के लिए हमारे प्रयोगशालाओं में हर बैच का सत्यापन किया जाता है।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-primary text-on-primary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">biotech</span>
+                </div>
+                <div className="w-full pl-20 md:w-1/2">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Purity Testing" src="/honey5.jpeg" />
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 6 */}
+              <div className="relative flex flex-col md:flex-row-reverse items-center group">
+                <div className="w-full pl-20 md:w-1/2 md:pl-20 mb-8 md:mb-0 text-left">
+                  <h3 className="font-headline-md text-headline-md text-primary mb-2">{t("Glass Bottling", "ग्लास बॉटलिंग")}</h3>
+                  <p className="text-on-surface-variant font-body-md">{t("We use premium glass jars for packaging to prevent contamination and maintain the honey's pristine quality.", "हम संदूषण को रोकने और शहद की प्राचीन गुणवत्ता को बनाए रखने के लिए पैकेजिंग के लिए प्रीमियम कांच के जार का उपयोग करते हैं।")}</p>
+                </div>
+                <div className="absolute left-[31px] md:left-1/2 w-16 h-16 bg-secondary text-on-secondary rounded-full flex items-center justify-center transform -translate-x-1/2 z-10 shadow-xl group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined transition-transform duration-300 group-hover:rotate-[15deg]">kitchen</span>
+                </div>
+                <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
+                  <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
+                    <img className="w-full h-full object-cover" alt="Glass Bottling" src="/honey6.jpeg" />
                   </div>
                 </div>
               </div>
@@ -158,7 +386,7 @@ export function Manufacturing() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative rounded-[40px] overflow-hidden aspect-square shadow-2xl">
-                <img className="w-full h-full object-cover" alt="Kachi Ghani comparison" src="https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=800&auto=format&fit=crop" />
+                <img className="w-full h-full object-cover" alt="Kachi Ghani comparison" src="/kacchighani.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="font-headline-md text-headline-md mb-2">{t("The Texture of Truth", "सच्चाई की बनावट")}</h4>

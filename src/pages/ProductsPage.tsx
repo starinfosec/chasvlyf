@@ -128,8 +128,8 @@ export function ProductsPage() {
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="mb-16"
         >
-          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-4">{t("Artisanal Catalog", "कारीगर कैटलॉग")}</h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">{t("Discover the essence of purity with our cold-pressed, nutrient-rich edible oils. Harvested with care, processed with integrity.", "हमारे कोल्ड-प्रेस्ड, पोषक तत्वों से भरपूर खाद्य तेलों के साथ शुद्धता के सार की खोज करें। देखभाल के साथ काटा गया, अखंडता के साथ संसाधित किया गया।")}</p>
+          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-4">{t("Our Products", "हमारे उत्पाद")}</h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">{t("Discover products inspired by India's natural resources and traditional food practices.", "भारत के प्राकृतिक संसाधनों और पारंपरिक खाद्य प्रथाओं से प्रेरित उत्पादों की खोज करें।")}</p>
         </motion.header>
 
         <div className="w-full">
@@ -137,7 +137,10 @@ export function ProductsPage() {
           <div className="w-full space-y-16">
             {/* Oils Section */}
             <section>
-              <h2 className="font-display-sm text-display-sm text-primary mb-8 border-b border-outline-variant/30 pb-4">{t("Premium Oils", "प्रीमियम तेल")}</h2>
+              <div className="mb-8 border-b border-outline-variant/30 pb-4">
+                <h2 className="font-display-sm text-display-sm text-primary mb-2">{t("Traditional Oils, Modern Quality", "पारंपरिक तेल, आधुनिक गुणवत्ता")}</h2>
+                <p className="font-body-md text-on-surface-variant max-w-2xl">{t("Our range of oils reflects India's traditional food culture while being presented for the needs of today's consumers.", "हमारे तेलों की श्रृंखला भारत की पारंपरिक खाद्य संस्कृति को दर्शाती है जबकि आज के उपभोक्ताओं की जरूरतों के लिए प्रस्तुत की जाती है।")}</p>
+              </div>
               <motion.div
                 variants={containerVariants}
                 initial="hidden"
@@ -185,7 +188,10 @@ export function ProductsPage() {
 
             {/* Laddoos Section */}
             <section>
-              <h2 className="font-display-sm text-display-sm text-primary mb-8 border-b border-outline-variant/30 pb-4">{t("Artisanal Laddoos", "कारीगर लड्डू")}</h2>
+              <div className="mb-8 border-b border-outline-variant/30 pb-4">
+                <h2 className="font-display-sm text-display-sm text-primary mb-2">{t("Mahua Laddu — A Taste Rooted in Tradition", "महुआ लड्डू — परंपरा में निहित एक स्वाद")}</h2>
+                <p className="font-body-md text-on-surface-variant max-w-2xl">{t("Mahua represents an important part of India's natural and traditional food heritage. Our Classic Mahua Laddoos offer a traditional taste presented in a modern, convenient form.", "महुआ भारत की प्राकृतिक और पारंपरिक खाद्य विरासत का एक महत्वपूर्ण हिस्सा है। हमारे क्लासिक महुआ लड्डू आधुनिक रूप में पारंपरिक स्वाद प्रदान करते हैं।")}</p>
+              </div>
               <motion.div
                 variants={containerVariants}
                 initial="hidden"

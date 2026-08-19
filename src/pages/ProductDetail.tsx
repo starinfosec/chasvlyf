@@ -238,7 +238,7 @@ export function ProductDetail() {
       const selectedSize = product.sizes[selectedSizeIdx].label;
       const message = `*New Order Request*\n\n*Product:* ${product.name}\n*Size:* ${selectedSize}\n*Order Type:* ${orderType === 'bulk' ? 'Bulk Order' : 'Sample Order'}\n*Quantity:* ${quantity}\n*Total Price:* ₹${totalPrice.toLocaleString('en-IN')}\n\n*Customer Details*\n*Name:* ${formData.name}\n*Contact:* ${formData.contact}\n*Email:* ${formData.email}\n*Address:* ${formData.address}`;
 
-      const whatsappUrl = `https://wa.me/919999999999?text=${encodeURIComponent(message)}`;
+      const whatsappUrl = `https://wa.me/918767153572?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, '_blank');
     }
   };

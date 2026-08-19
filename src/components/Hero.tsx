@@ -49,25 +49,25 @@ export function Hero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span className="inline-block py-1 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-bold text-label-bold mb-6 text-sm tracking-widest uppercase shadow-xl">
-            {t("SINCE 1994 • PREMIUM QUALITY", "1994 से • बेहतरीन क्वालिटी")}
+            {t("Connecting India’s Natural Food Heritage with the Modern World.", "भारत की प्राकृतिक खाद्य विरासत को आधुनिक दुनिया से जोड़ना।")}
           </span>
           <h1 className="font-display-md md:font-display-lg text-[56px] sm:text-[72px] md:text-[90px] lg:text-[120px] leading-[1.1] mb-6 text-shadow-premium">
-            {t("Pure Oils,", "शुद्ध तेल,")} <br className="hidden md:block" />
-            <span className="italic font-light opacity-90">{t("Healthy Life", "स्वस्थ जीवन")}</span>
+            {t("Taste Ka", "टेस्ट का")} <br className="hidden md:block" />
+            <span className="italic font-light opacity-90">{t("Naya Andaaz", "नया अंदाज़")}</span>
           </h1>
           <p className="font-body-md md:font-body-lg text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] opacity-90 max-w-5xl mx-auto mb-10 leading-relaxed drop-shadow-md">
             {t(
-              "Enjoy 100% natural, cold-pressed oils and authentic Mahua Laddoos. Made with care to keep all the healthy nutrients and fresh smell.",
-              "हमारे 100% प्राकृतिक और कच्ची घानी तेलों और प्रामाणिक महुआ लड्डू का आनंद लें। इन्हें इस तरह बनाया गया है कि सारे पोषक तत्व और ताजी महक बनी रहे।"
+              "Chaskilyf™ brings together traditional food knowledge, natural resources, local entrepreneurship, and modern quality practices to create products inspired by India's food heritage.",
+              "चस्किलाइफ™ पारंपरिक खाद्य ज्ञान, प्राकृतिक संसाधनों, स्थानीय उद्यमिता और आधुनिक गुणवत्ता प्रथाओं को एक साथ लाता है ताकि भारत की खाद्य विरासत से प्रेरित उत्पाद बनाए जा सकें।"
             )}
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link to="/contact" className="bg-primary text-on-primary rounded-full px-10 py-5 font-label-bold text-lg md:text-xl hover:scale-105 transition-transform flex items-center gap-3 shadow-xl shadow-primary/20">
-              {t("Ask Us", "हमसे पूछें")}{" "}
+              {t("Explore Our Products", "हमारे उत्पादों का अन्वेषण करें")}{" "}
               <span className="material-symbols-outlined text-xl md:text-2xl">trending_flat</span>
             </Link>
             <Link to="/products" className="bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full px-10 py-5 font-label-bold text-lg md:text-xl hover:bg-white/20 transition-colors shadow-xl">
-              {t("See Products", "उत्पाद देखें")}
+              {t("Our Story", "हमारी कहानी")}
             </Link>
           </div>
         </motion.div>

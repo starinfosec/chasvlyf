@@ -9,15 +9,16 @@ export function Footer() {
       <div className="absolute inset-0 warli-bg pointer-events-none opacity-20"></div>
       <div className="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="col-span-1 md:col-span-1">
-          <Link to="/" className="inline-block mb-6">
+          <Link to="/" className="inline-block mb-2">
             <img
               alt="Chaskilyf Logo"
               className="h-24 md:h-28 w-auto object-contain bg-white/90 p-2 rounded-lg"
               src="/logo.png"
             />
           </Link>
+          <h3 className="text-lg font-headline-md text-white mb-2">{t("Chaskilyf™ - Taste Ka Naya Andaaz", "चस्किलाइफ™ - टेस्ट का नया अंदाज़")}</h3>
           <p className="text-surface-variant opacity-70 font-body-md mb-6">
-            {t("Crafting liquid gold through the purest cold-press methods since 1994.", "1994 से शुद्धतम कोल्ड-प्रेस विधियों के माध्यम से तरल सोना तैयार कर रहे हैं।")}
+            {t("Bringing the richness of India's natural food heritage to your table, with purity and pride.", "शुद्धता और गर्व के साथ, भारत की प्राकृतिक खाद्य विरासत की समृद्धि को आपकी मेज पर लाना।")}
           </p>
           <div className="flex gap-4">
             <a
@@ -97,7 +98,9 @@ export function Footer() {
             <li>
               <a
                 className="text-surface-variant opacity-70 hover:opacity-100 transition-opacity font-body-md flex items-center gap-2"
-                href="#"
+                href="https://wa.me/918767153572"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="material-symbols-outlined text-sm">call</span>{" "}
                 {t("WhatsApp Support", "व्हाट्सएप सपोर्ट")}

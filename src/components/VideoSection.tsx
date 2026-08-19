@@ -8,13 +8,13 @@ export function VideoSection() {
       <div className="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
         <div className="text-center mb-12 md:mb-20 reveal-up">
           <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-bold text-label-bold mb-4 uppercase tracking-widest">
-            {t("Visual Journey", "दृश्य यात्रा")}
+            {t("Community Impact", "सामुदायिक प्रभाव")}
           </span>
           <h2 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-4">
-            {t("The Golden Process in Motion", "प्रक्रिया गति में")}
+            {t("Creating Value Beyond Products", "उत्पादों से परे मूल्य बनाना")}
           </h2>
           <p className="font-body-md md:font-body-lg text-on-surface-variant max-w-2xl mx-auto">
-            {t("Witness the purity of our extraction process. From sun-kissed seeds to the rich, golden oil that nourishes your family.", "हमारी निष्कर्षण प्रक्रिया की शुद्धता का गवाह बनें। धूप में पके बीजों से लेकर समृद्ध, सुनहरे तेल तक जो आपके परिवार का पोषण करता है।")}
+            {t("Chaskilyf™ isn't just about selling goods. It's about recognizing the true worth of traditional food resources.", "चस्किलाइफ™ केवल सामान बेचने के बारे में नहीं है। यह पारंपरिक खाद्य संसाधनों के वास्तविक मूल्य को पहचानने के बारे में है।")}
           </p>
         </div>
 
@@ -33,9 +33,9 @@ export function VideoSection() {
                 <span className="px-3 py-1 bg-primary/80 backdrop-blur-sm rounded-full text-xs font-label-bold tracking-wider uppercase">{t("Featured", "विशेष")}</span>
                 <span className="text-sm font-label-bold opacity-80 text-shadow">3:45</span>
               </div>
-              <h3 className="font-headline-md text-headline-md md:font-headline-lg md:text-headline-lg mb-2 text-shadow-lg">{t("The Art of Wood Pressing", "लकड़ी से दबाने की कला")}</h3>
+              <h3 className="font-headline-md text-headline-md md:font-headline-lg md:text-headline-lg mb-2 text-shadow-lg">{t("EMPOWERMENT", "सशक्तिकरण")}</h3>
               <p className="font-body-sm md:font-body-md opacity-90 max-w-md hidden md:block text-shadow">
-                {t("Step inside our artisanal facility to see how traditional methods preserve nature's finest nutrients.", "प्रकृति के बेहतरीन पोषक तत्वों को पारंपरिक तरीके कैसे संरक्षित करते हैं, यह देखने के लिए हमारी सुविधा के अंदर कदम रखें।")}
+                {t("Working with women's self-help groups for sorting and cleaning.", "छंटाई और सफाई के लिए महिलाओं के स्वयं सहायता समूहों के साथ काम करना।")}
               </p>
             </div>
           </div>
@@ -52,7 +52,10 @@ export function VideoSection() {
               
               <div className="absolute bottom-6 left-6 z-10 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
                 <span className="text-xs font-label-bold opacity-80 mb-2 block">1:20</span>
-                <h4 className="font-label-bold text-lg text-shadow-md">{t("Sourcing the Seeds", "बीज प्राप्त करना")}</h4>
+                <h4 className="font-label-bold text-lg text-shadow-md">{t("FAIR PRICING", "उचित मूल्य निर्धारण")}</h4>
+                <p className="font-body-sm text-xs opacity-90 mt-1 hidden md:block text-shadow">
+                  {t("Creating better value for farmers and collectors who provide our raw materials.", "कच्चे माल उपलब्ध कराने वाले किसानों और संग्राहकों के लिए बेहतर मूल्य बनाना।")}
+                </p>
               </div>
             </div>
 
@@ -66,7 +69,10 @@ export function VideoSection() {
               
               <div className="absolute bottom-6 left-6 z-10 text-white transform transition-transform duration-500 group-hover:translate-y-[-4px]">
                 <span className="text-xs font-label-bold opacity-80 mb-2 block">2:15</span>
-                <h4 className="font-label-bold text-lg text-shadow-md">{t("Purity Testing Labs", "शुद्धता परीक्षण प्रयोगशाला")}</h4>
+                <h4 className="font-label-bold text-lg text-shadow-md">{t("MODERN REACH", "आधुनिक पहुंच")}</h4>
+                <p className="font-body-sm text-xs opacity-90 mt-1 hidden md:block text-shadow max-w-[250px]">
+                  {t("Giving traditional products the respect and presentation they deserve in modern markets.", "आधुनिक बाजारों में पारंपरिक उत्पादों को वह सम्मान और प्रस्तुति देना जिसके वे हकदार हैं।")}
+                </p>
               </div>
             </div>
           </div>

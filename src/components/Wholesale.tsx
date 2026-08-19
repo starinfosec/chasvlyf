@@ -12,19 +12,19 @@ export function Wholesale() {
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h2 className="font-headline-lg text-headline-lg text-primary mb-6">
-          {t("India's Premier Wholesale Partner for Organic Oils", "ऑर्गेनिक तेलों के लिए भारत का प्रमुख थोक भागीदार")}
+          {t("From Local to Global", "स्थानीय से वैश्विक तक")}
         </h2>
         <div className="space-y-4 font-body-md text-on-surface-variant">
           <p>
             {t(
-              "Chaskilyf stands at the intersection of ancestral wisdom and modern quality control. As a leading manufacturer and exporter, we specialize in Cold Pressed (Kachi Ghani) oils that serve as the foundation for healthy kitchens across the globe.",
-              "चस्किलाइफ ऑयल्स पैतृक ज्ञान और आधुनिक गुणवत्ता नियंत्रण के चौराहे पर खड़ा है। एक प्रमुख निर्माता और निर्यातक के रूप में, हम कोल्ड प्रेस्ड (कच्ची घानी) तेलों के विशेषज्ञ हैं जो दुनिया भर में स्वस्थ रसोई के लिए नींव का काम करते हैं।"
+              "We believe India's villages and rural communities hold the key to natural, healthy food.",
+              "हमारा मानना है कि भारत के गाँव और ग्रामीण समुदाय प्राकृतिक, स्वस्थ भोजन की कुंजी हैं।"
             )}
           </p>
           <p>
             {t(
-              "Our infrastructure is built to handle Bulk Orders for global retail chains, restaurant groups, and wellness brands. By eliminating middlemen, we provide competitive pricing while maintaining 100% traceability from farm to bottle.",
-              "हमारा बुनियादी ढांचा वैश्विक खुदरा श्रृंखलाओं, रेस्तरां समूहों और वेलनेस ब्रांडों के लिए थोक ऑर्डर को संभालने के लिए बनाया गया है। बिचौलियों को खत्म करके, हम खेत से बोतल तक 100% पता लगाने की क्षमता बनाए रखते हुए प्रतिस्पर्धी मूल्य निर्धारण प्रदान करते हैं।"
+              "Chaskilyf™ is dedicated to giving these local products the quality control, presentation, and branding required to reach larger, more demanding markets.",
+              "चस्किलाइफ™ इन स्थानीय उत्पादों को बड़े, अधिक मांग वाले बाजारों तक पहुंचने के लिए आवश्यक गुणवत्ता नियंत्रण, प्रस्तुति और ब्रांडिंग देने के लिए समर्पित है।"
             )}
           </p>
           <div className="pt-6 grid grid-cols-2 gap-4">
@@ -32,25 +32,25 @@ export function Wholesale() {
               <span className="material-symbols-outlined text-secondary">
                 check
               </span>
-              <span>{t("Lab Tested Batches", "प्रयोगशाला परीक्षण बैच")}</span>
+              <span>{t("Quality Control", "गुणवत्ता नियंत्रण")}</span>
             </div>
             <div className="flex items-start gap-2">
               <span className="material-symbols-outlined text-secondary">
                 check
               </span>
-              <span>{t("Custom Packaging", "कस्टम पैकेजिंग")}</span>
+              <span>{t("Better Presentation", "बेहतर प्रस्तुति")}</span>
             </div>
             <div className="flex items-start gap-2">
               <span className="material-symbols-outlined text-secondary">
                 check
               </span>
-              <span>{t("Zero Preservatives", "शून्य प्रिजर्वेटिव")}</span>
+              <span>{t("Modern Branding", "आधुनिक ब्रांडिंग")}</span>
             </div>
             <div className="flex items-start gap-2">
               <span className="material-symbols-outlined text-secondary">
                 check
               </span>
-              <span>{t("Global Shipping", "ग्लोबल शिपिंग")}</span>
+              <span>{t("Larger Markets", "बड़े बाज़ार")}</span>
             </div>
           </div>
         </div>

@@ -161,7 +161,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-label-bold text-label-bold text-on-surface">{t("WhatsApp Wholesale Support", "व्हाट्सएप थोक समर्थन")}</p>
-                    <a className="font-body-md hover:text-[#25D366] transition-colors flex items-center gap-2" href="#">
+                    <a className="font-body-md hover:text-[#25D366] transition-colors flex items-center gap-2" href="https://wa.me/918767153572" target="_blank" rel="noopener noreferrer">
                       {t("Chat with Sales Director", "बिक्री निदेशक के साथ चैट करें")}
                       <span className="material-symbols-outlined text-sm">open_in_new</span>
                     </a>

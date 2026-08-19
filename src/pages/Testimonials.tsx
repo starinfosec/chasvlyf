@@ -11,39 +11,33 @@ export function Testimonials() {
 
   const testimonials = [
     {
-      name: t("Chef Julian Moore", "शेफ जूलियन मूर"),
-      role: t("Executive Chef, Le Petit Chateu", "कार्यकारी शेफ, ले पेटिट चेटू"),
-      content: t("The wood-pressed groundnut oil from Chaskilyf has transformed our culinary profile. Its high smoke point and authentic nutty undertones are unmatched in the current market. A truly artisanal product.", "चस्किलाइफ के लकड़ी से दबाए गए मूंगफली के तेल ने हमारे पाक प्रोफाइल को बदल दिया है। इसका उच्च धुआं बिंदु और प्रामाणिक पौष्टिक स्वर वर्तमान बाजार में बेजोड़ हैं। वास्तव में एक कारीगर उत्पाद।"),
+      name: t("Heritage & Pride", "विरासत और गौरव"),
+      role: t("Brand Philosophy", "ब्रांड दर्शन"),
+      content: t("We are proud of traditional foods.", "हमें पारंपरिक खाद्य पदार्थों पर गर्व है।"),
       rating: 5
     },
     {
-      name: t("Sarah Jenkins", "सारा जेनकिंस"),
-      role: t("Nutritionist & Wellness Coach", "पोषण विशेषज्ञ और वेलनेस कोच"),
-      content: t("I exclusively recommend Chaskilyf's Virgin Coconut Oil to my clients. The cold-pressed extraction method preserves the medium-chain triglycerides perfectly. You can taste the purity in every spoonful.", "मैं विशेष रूप से अपने ग्राहकों को चस्किलाइफ के वर्जिन कोकोनट ऑयल की सलाह देता हूं। कोल्ड-प्रेस्ड निष्कर्षण विधि मध्यम-श्रृंखला ट्राइग्लिसराइड्स को पूरी तरह से संरक्षित करती है। आप हर चम्मच में शुद्धता का स्वाद ले सकते हैं।"),
+      name: t("Rural Excellence", "ग्रामीण उत्कृष्टता"),
+      role: t("Brand Philosophy", "ब्रांड दर्शन"),
+      content: t("We believe rural resources can provide world-class products.", "हमारा मानना है कि ग्रामीण संसाधन विश्व स्तरीय उत्पाद प्रदान कर सकते हैं।"),
       rating: 5
     },
     {
-      name: t("Marcus Wei", "मार्कस वेई"),
-      role: t("Artisan Baker", "कारीगर बेकर"),
-      content: t("Finding consistent, high-quality cold-pressed oils was a challenge until we partnered with Chaskilyf. Their golden sunflower oil brings a lightness to our pastries that our customers constantly praise.", "चस्किलाइफ के साथ साझेदारी करने तक लगातार, उच्च गुणवत्ता वाले कोल्ड-प्रेस्ड तेल खोजना एक चुनौती थी। उनका सुनहरा सूरजमुखी का तेल हमारे पेस्ट्री में एक हल्कापन लाता है जिसकी हमारे ग्राहक लगातार प्रशंसा करते हैं।"),
+      name: t("Natural Processing", "प्राकृतिक प्रसंस्करण"),
+      role: t("Brand Philosophy", "ब्रांड दर्शन"),
+      content: t("We support natural, chemical-free processing.", "हम प्राकृतिक, रसायन मुक्त प्रसंस्करण का समर्थन करते हैं।"),
       rating: 5
     },
     {
-      name: t("Elena Rostova", "एलेना रोस्तोवा"),
-      role: t("Holistic Health Practitioner", "समग्र स्वास्थ्य व्यवसायी"),
-      content: t("The Gingelly Sesame oil is a staple in my practice. The aroma is incredibly rich, and its therapeutic properties are exactly what I look for in a traditional, unrefined oil. Absolutely phenomenal.", "जिंजेली तिल का तेल मेरे अभ्यास में एक प्रधान है। सुगंध अविश्वसनीय रूप से समृद्ध है, और इसके चिकित्सीय गुण वही हैं जो मैं एक पारंपरिक, अपरिष्कृत तेल में ढूंढता हूं। बिल्कुल अभूतपूर्व।"),
+      name: t("Market Evolution", "बाजार का विकास"),
+      role: t("Brand Philosophy", "ब्रांड दर्शन"),
+      content: t("We want to improve the way traditional foods are sold.", "हम पारंपरिक खाद्य पदार्थों को बेचने के तरीके में सुधार करना चाहते हैं।"),
       rating: 5
     },
     {
-      name: t("David Chen", "डेविड चेन"),
-      role: t("Restaurant Owner", "रेस्तरां के मालिक"),
-      content: t("We buy in bulk, and the consistency across batches is incredible. The Mustard Oil brings an authentic pungency that is essential for our regional dishes. Delivery is always prompt and professional.", "हम थोक में खरीदते हैं, और बैचों में स्थिरता अविश्वसनीय है। सरसों का तेल एक प्रामाणिक तीखापन लाता है जो हमारे क्षेत्रीय व्यंजनों के लिए आवश्यक है। वितरण हमेशा शीघ्र और पेशेवर होता है।"),
-      rating: 5
-    },
-    {
-      name: t("Priya Sharma", "प्रिया शर्मा"),
-      role: t("Home Chef", "होम शेफ"),
-      content: t("Chaskilyf has brought back the flavors of my childhood. The wood-pressed oils have a depth of flavor that refined oils simply cannot replicate. Knowing it's chemical-free gives me peace of mind.", "चस्किलाइफ मेरे बचपन के स्वाद को वापस ले आया है। लकड़ी से दबाए गए तेलों में स्वाद की गहराई होती है जिसे परिष्कृत तेल बस दोहरा नहीं सकते हैं। यह जानकर कि यह रसायन मुक्त है, मुझे मन की शांति मिलती है।"),
+      name: t("Mutual Growth", "पारस्परिक विकास"),
+      role: t("Brand Philosophy", "ब्रांड दर्शन"),
+      content: t("We care about the health of our customers and the success of our producers.", "हम अपने ग्राहकों के स्वास्थ्य और अपने उत्पादकों की सफलता की परवाह करते हैं।"),
       rating: 5
     }
   ];
@@ -55,9 +49,9 @@ export function Testimonials() {
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-secondary-fixed/10 rounded-full blur-[100px] pointer-events-none"></div>
 
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-bold text-label-bold mb-4 uppercase tracking-widest">{t("Client Stories", "ग्राहक की कहानियाँ")}</span>
-          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-6">{t("Testimonials", "प्रशंसापत्र")}</h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant">{t("Hear from the chefs, nutritionists, and everyday connoisseurs who trust Chaskilyf for their culinary and wellness needs.", "उन शेफ, पोषण विशेषज्ञों और रोजमर्रा के पारखी लोगों से सुनें जो अपनी पाक और कल्याण आवश्यकताओं के लिए चस्किलाइफ पर भरोसा करते हैं।")}</p>
+          <span className="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-bold text-label-bold mb-4 uppercase tracking-widest">{t("Brand Philosophy", "ब्रांड दर्शन")}</span>
+          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-6">{t("What We Believe", "हम क्या मानते हैं")}</h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant">{t("The principles that guide our journey and shape our commitment to quality, tradition, and sustainability.", "वे सिद्धांत जो हमारी यात्रा का मार्गदर्शन करते हैं और गुणवत्ता, परंपरा और स्थिरता के प्रति हमारी प्रतिबद्धता को आकार देते हैं।")}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">

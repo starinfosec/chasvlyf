@@ -14,11 +14,11 @@ export function Home() {
     <main>
       <Hero />
       <Products />
-      <section className="w-full h-[40vh] md:h-[60vh] relative">
+      <section className="w-full">
         <img 
           src="/home.png" 
           alt="Natural Ingredients" 
-          className="w-full h-full object-cover"
+          className="w-full h-auto"
         />
       </section>
       <WhyChooseUs />
