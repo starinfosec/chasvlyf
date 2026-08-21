@@ -15,7 +15,7 @@ export function Home() {
       <Hero />
       <Products />
       <section className="w-full">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/home.png" 
           alt="Natural Ingredients" 
           className="w-full h-auto"

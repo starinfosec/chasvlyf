@@ -93,11 +93,11 @@ export function Gallery() {
               variants={itemVariants}
               className={`relative group overflow-hidden rounded-3xl bg-surface-variant ${img.span}`}
             >
-              <img 
+              <img loading="lazy" decoding="async" 
                 src={img.src} 
                 alt={img.title} 
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
-                loading="lazy"
+                
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                  <div className="p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">

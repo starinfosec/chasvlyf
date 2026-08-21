@@ -107,7 +107,7 @@ export function Certifications() {
         </motion.div>
       </div>
       <div className="w-full mt-16 md:mt-24">
-        <img 
+        <img loading="lazy" decoding="async" 
           src="/home2.png" 
           alt="Natural Purity" 
           className="w-full h-auto"

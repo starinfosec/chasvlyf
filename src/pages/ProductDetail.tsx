@@ -76,6 +76,40 @@ export function ProductDetail() {
       ],
       badge: t("Ayurvedic Heritage", "आयुर्वेदिक विरासत")
     },
+    "coconut-oil": {
+      name: t("Coconut Oil", "नारियल का तेल"),
+      category: t("Premium Oils", "प्रीमियम तेल"),
+      description: t("Pure, cold-pressed coconut oil, perfect for cooking, skin, and hair care. Extracted without heat to preserve natural aroma and nutrients.", "शुद्ध, कोल्ड-प्रेस्ड नारियल तेल, खाना पकाने, त्वचा और बालों की देखभाल के लिए एकदम सही। प्राकृतिक सुगंध और पोषक तत्वों को संरक्षित करने के लिए बिना गर्मी के निकाला गया।"),
+      images: ["/oils/coconut-oil.png", "/oils/coconutoil.png"],
+      benefits: [
+        t("Multipurpose & Nourishing", "बहुउद्देश्यीय और पौष्टिक"),
+        t("Good for Skin and Hair", "त्वचा और बालों के लिए अच्छा"),
+        t("Rich in MCTs", "MCTs से भरपूर")
+      ],
+      sizes: [
+        { label: "250 ML", price: 180 },
+        { label: "500 ML", price: 340 },
+        { label: "1 Ltr", price: 650 }
+      ],
+      badge: t("Virgin Cold Pressed", "वर्जिन कोल्ड प्रेस्ड")
+    },
+    "flaxseed-oil": {
+      name: t("Flaxseed Oil", "अलसी का तेल"),
+      category: t("Premium Oils", "प्रीमियम तेल"),
+      description: t("Nutrient-dense oil rich in Omega-3 fatty acids, ideal for heart health and immunity. Best consumed raw or lightly drizzled.", "ओमेगा-3 फैटी एसिड से भरपूर पोषक तत्वों से भरपूर तेल, हृदय स्वास्थ्य और प्रतिरक्षा के लिए आदर्श। कच्चे या हल्के छिड़काव का सबसे अच्छा सेवन किया जाता है।"),
+      images: ["/oils/flaxseed-oil.png", "/oils/flaxseedoil.png"],
+      benefits: [
+        t("High in Omega-3", "ओमेगा-3 से भरपूर"),
+        t("Supports Heart Health", "हृदय स्वास्थ्य का समर्थन करता है"),
+        t("Boosts Immunity", "प्रतिरक्षा को बढ़ाता है")
+      ],
+      sizes: [
+        { label: "250 ML", price: 220 },
+        { label: "500 ML", price: 420 },
+        { label: "1 Ltr", price: 800 }
+      ],
+      badge: t("Heart Healthy", "हृदय के लिए स्वस्थ")
+    },
     "classic-mahua-laddoo": {
       name: t("Classic Mahua Laddoo", "क्लासिक महुआ लड्डू"),
       category: t("Artisanal Laddoos", "कारीगर लड्डू"),
@@ -295,7 +329,7 @@ export function ProductDetail() {
                       onClick={() => setSelectedImageIdx(idx)}
                       className={`relative w-20 h-20 rounded-2xl overflow-hidden shrink-0 border-2 transition-all ${selectedImageIdx === idx ? 'border-primary' : 'border-transparent opacity-70 hover:opacity-100'}`}
                     >
-                      <img src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover" />
+                      <img loading="lazy" decoding="async" src={img} alt={`Thumbnail ${idx}`} className="w-full h-full object-cover" />
                     </button>
                   ))}
                 </div>

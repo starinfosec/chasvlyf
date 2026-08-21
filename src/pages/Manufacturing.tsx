@@ -21,11 +21,11 @@ export function Manufacturing() {
     <div className="bg-background text-on-background font-body-md overflow-x-hidden">
       {/* Hero Section with Industrial Parallax */}
       <header className="relative h-[600px] md:h-[819px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0 parallax-bg opacity-40 brightness-50" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1590779033100-9f60a05a013d?q=80&w=800&auto=format&fit=crop')" }}></div>
+        <div className="absolute inset-0 z-0 parallax-bg opacity-40 brightness-50" style={{ backgroundImage: "url('/manu-bg.png')" }}></div>
         <div className="relative z-10 text-center px-4 max-w-4xl">
           <span className="inline-block bg-primary-container text-on-primary-container px-6 py-1 rounded-full font-label-bold text-label-bold mb-6">{t("How We Make It", "हम कैसे बनाते हैं")}</span>
-          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-6 leading-tight">{t("Mastery of ", "महारत ")}<span className="text-secondary">{t("Kachi Ghani", "कच्ची घानी की")}</span></h1>
-          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">{t("We mix old traditions with new science. See how we use wood pressing to make the best oil for you.", "हम पुरानी परंपराओं को नए विज्ञान के साथ मिलाते हैं। देखें कि हम आपके लिए बेहतरीन तेल बनाने के लिए लकड़ी दबाने का उपयोग कैसे करते हैं।")}</p>
+          <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-primary mb-6 leading-tight">{t("All Products ", "सभी उत्पाद ")}<span className="text-secondary">{t("Manufacturing Process", "निर्माण प्रक्रिया")}</span></h1>
+          <p className="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">{t("We mix old traditions with new science. See how we craft the best natural products for you.", "हम पुरानी परंपराओं को नए विज्ञान के साथ मिलाते हैं। देखें कि हम आपके लिए बेहतरीन प्राकृतिक उत्पाद कैसे बनाते हैं।")}</p>
         </div>
       </header>
 
@@ -53,7 +53,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Seed Selection" src="/oil1.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Seed Selection" src="/oil1.jpeg" />
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Pneumatic Cleaning" src="/oil2.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Pneumatic Cleaning" src="/oil2.jpeg" />
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Cold Press Extraction" src="/oil3.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Cold Press Extraction" src="/oil3.jpeg" />
                   </div>
                 </div>
               </div>
@@ -98,7 +98,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Natural Filtration" src="/oil4.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Natural Filtration" src="/oil4.jpeg" />
                   </div>
                 </div>
               </div>
@@ -113,7 +113,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Quality Testing" src="/oil5.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Quality Testing" src="/oil5.jpeg" />
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Aseptic Packaging" src="/oil6.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Aseptic Packaging" src="/oil6.jpeg" />
                   </div>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Global Delivery" src="/oil7.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Global Delivery" src="/oil7.jpeg" />
                   </div>
                 </div>
               </div>
@@ -177,7 +177,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Wild Foraging" src="/mahua1.png" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Wild Foraging" src="/mahua1.png" />
                   </div>
                 </div>
               </div>
@@ -193,7 +193,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Sun Drying" src="/mahua2.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Sun Drying" src="/mahua2.jpeg" />
                   </div>
                 </div>
               </div>
@@ -209,7 +209,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Traditional Extraction" src="/mahua3.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Traditional Extraction" src="/mahua3.jpeg" />
                   </div>
                 </div>
               </div>
@@ -225,7 +225,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Cold Filtration" src="/mahua4.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Cold Filtration" src="/mahua4.jpeg" />
                   </div>
                 </div>
               </div>
@@ -241,7 +241,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Quality Assurance" src="/mahua5.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Quality Assurance" src="/mahua5.jpeg" />
                   </div>
                 </div>
               </div>
@@ -257,7 +257,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Sealed Freshness" src="/mahua6.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Sealed Freshness" src="/mahua6.jpeg" />
                   </div>
                 </div>
               </div>
@@ -291,7 +291,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Deep Forest Sourcing" src="/honey1.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Deep Forest Sourcing" src="/honey1.jpeg" />
                   </div>
                 </div>
               </div>
@@ -307,7 +307,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Sustainable Harvesting" src="/honey2.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Sustainable Harvesting" src="/honey2.jpeg" />
                   </div>
                 </div>
               </div>
@@ -323,7 +323,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Raw & Unheated" src="/honey3.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Raw & Unheated" src="/honey3.jpeg" />
                   </div>
                 </div>
               </div>
@@ -339,7 +339,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Natural Straining" src="/honey4.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Natural Straining" src="/honey4.jpeg" />
                   </div>
                 </div>
               </div>
@@ -355,7 +355,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:w-1/2">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Purity Testing" src="/honey5.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Purity Testing" src="/honey5.jpeg" />
                   </div>
                 </div>
               </div>
@@ -371,7 +371,7 @@ export function Manufacturing() {
                 </div>
                 <div className="w-full pl-20 md:pl-0 md:w-1/2 md:pr-20">
                   <div className="rounded-3xl overflow-hidden shadow-2xl border border-white/20 aspect-video">
-                    <img className="w-full h-full object-cover" alt="Glass Bottling" src="/honey6.jpeg" />
+                    <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Glass Bottling" src="/honey6.jpeg" />
                   </div>
                 </div>
               </div>
@@ -386,7 +386,7 @@ export function Manufacturing() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1">
               <div className="relative rounded-[40px] overflow-hidden aspect-square shadow-2xl">
-                <img className="w-full h-full object-cover" alt="Kachi Ghani comparison" src="/kacchighani.png" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" alt="Kachi Ghani comparison" src="/kacchighani.png" />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent"></div>
                 <div className="absolute bottom-10 left-10 text-white">
                   <h4 className="font-headline-md text-headline-md mb-2">{t("The Texture of Truth", "सच्चाई की बनावट")}</h4>
@@ -430,57 +430,7 @@ export function Manufacturing() {
         </div>
       </section>
 
-      {/* The Art of Laddoo Making Section */}
-      <section className="py-20 md:py-32 bg-white relative">
-        <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
-          <div className="text-center mb-16">
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-4">{t("The Art of Laddoo Making", "लड्डू बनाने की कला")}</h2>
-            <p className="font-body-lg text-on-surface-variant max-w-2xl mx-auto">{t("Experience the traditional process of crafting our authentic Mahua Laddoos, packed with nutrition and heritage.", "पोषण और विरासत से भरपूर हमारे प्रामाणिक महुआ लड्डू बनाने की पारंपरिक प्रक्रिया का अनुभव करें।")}</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="glass-card rounded-3xl overflow-hidden shadow-lg group">
-              <div className="h-48 overflow-hidden">
-                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?q=80&w=800&auto=format&fit=crop" alt="Foraging" />
-              </div>
-              <div className="p-6">
-                <span className="text-secondary font-label-bold mb-2 block">01</span>
-                <h4 className="font-headline-md text-primary mb-2">{t("Foraging & Selection", "खोज और चयन")}</h4>
-                <p className="text-on-surface-variant font-body-md text-sm">{t("We carefully handpick premium forest-grade Mahua flowers, ensuring only the finest blooms are selected.", "हम सावधानीपूर्वक प्रीमियम वन-ग्रेड महुआ के फूलों को चुनते हैं, यह सुनिश्चित करते हुए कि केवल बेहतरीन फूलों का चयन किया जाए।")}</p>
-              </div>
-            </div>
-            <div className="glass-card rounded-3xl overflow-hidden shadow-lg group">
-              <div className="h-48 overflow-hidden">
-                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1627998687702-86ff548d8aab?q=80&w=800&auto=format&fit=crop" alt="Sun Drying" />
-              </div>
-              <div className="p-6">
-                <span className="text-secondary font-label-bold mb-2 block">02</span>
-                <h4 className="font-headline-md text-primary mb-2">{t("Sun-Drying", "धूप में सुखाना")}</h4>
-                <p className="text-on-surface-variant font-body-md text-sm">{t("The flowers are naturally sun-dried on clean platforms to retain their medicinal properties and natural sweetness.", "फूलों को प्राकृतिक रूप से धूप में सुखाया जाता है ताकि उनके औषधीय गुणों और प्राकृतिक मिठास को बरकरार रखा जा सके।")}</p>
-              </div>
-            </div>
-            <div className="glass-card rounded-3xl overflow-hidden shadow-lg group">
-              <div className="h-48 overflow-hidden">
-                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?q=80&w=800&auto=format&fit=crop" alt="Traditional Roasting" />
-              </div>
-              <div className="p-6">
-                <span className="text-secondary font-label-bold mb-2 block">03</span>
-                <h4 className="font-headline-md text-primary mb-2">{t("Slow Roasting", "धीमी भुनाई")}</h4>
-                <p className="text-on-surface-variant font-body-md text-sm">{t("Ingredients are slow-roasted in pure cow ghee to enhance the aroma and bring out the deep, rich flavors.", "सुगंध को बढ़ाने और गहरे, समृद्ध स्वादों को बाहर लाने के लिए सामग्री को शुद्ध गाय के घी में धीरे-धीरे भुना जाता है।")}</p>
-              </div>
-            </div>
-            <div className="glass-card rounded-3xl overflow-hidden shadow-lg group">
-              <div className="h-48 overflow-hidden">
-                <img className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://images.unsplash.com/photo-1601050690597-df0568f70950?q=80&w=800&auto=format&fit=crop" alt="Hand Rolling" />
-              </div>
-              <div className="p-6">
-                <span className="text-secondary font-label-bold mb-2 block">04</span>
-                <h4 className="font-headline-md text-primary mb-2">{t("Hand-Rolling", "हाथ से गोल करना")}</h4>
-                <p className="text-on-surface-variant font-body-md text-sm">{t("Bound together with natural jaggery and nuts, each laddoo is carefully hand-rolled with love and tradition.", "प्राकृतिक गुड़ और मेवों के साथ बंधे, प्रत्येक लड्डू को प्यार और परंपरा के साथ सावधानीपूर्वक हाथ से गोल किया जाता है।")}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Lab Testing Bento Grid */}
       <section className="py-20 md:py-32 bg-surface-bright relative">
@@ -491,7 +441,7 @@ export function Manufacturing() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-gutter h-auto md:h-[600px]">
             <div className="md:col-span-2 glass-card rounded-3xl p-10 flex flex-col justify-end relative overflow-hidden group">
-              <img className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" alt="Metric 01" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop" />
+              <img loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" alt="Metric 01" src="/manu1.png" />
               <div className="relative z-10">
                 <span className="text-secondary font-label-bold text-label-bold tracking-widest uppercase">{t("Metric 01", "मीट्रिक 01")}</span>
                 <h4 className="font-headline-md text-headline-md text-primary mt-2">{t("Peroxide Value", "पेरोक्साइड मूल्य")}</h4>
@@ -516,14 +466,6 @@ export function Manufacturing() {
               <span className="material-symbols-outlined text-primary text-4xl mb-4">opacity</span>
               <h4 className="font-headline-md text-headline-md text-primary">{t("Iodine Value", "आयोडीन मूल्य")}</h4>
               <p className="text-on-surface-variant text-sm mt-2">{t("Standardizing the degree of unsaturation for heart-healthy balance.", "हृदय-स्वस्थ संतुलन के लिए असंतृप्ति की डिग्री को मानकीकृत करना।")}</p>
-            </div>
-            <div className="md:col-span-3 glass-card rounded-3xl p-10 flex flex-col justify-between relative overflow-hidden bg-primary text-on-primary">
-              <div className="relative z-10">
-                <h4 className="font-display-lg-mobile text-display-lg-mobile mb-4">{t("Real-time Batch Tracking", "रीयल-टाइम बैच ट्रैकिंग")}</h4>
-                <p className="max-w-xl opacity-90 font-body-lg">{t("Scan any bottle to view its specific lab report, harvest date, and press operator. Transparency is our highest ingredient.", "अपनी विशिष्ट प्रयोगशाला रिपोर्ट, फसल की तारीख और प्रेस ऑपरेटर को देखने के लिए किसी भी बोतल को स्कैन करें। पारदर्शिता हमारा सर्वोच्च घटक है।")}</p>
-              </div>
-              <button className="relative z-10 self-start mt-8 bg-on-primary text-primary px-10 py-4 rounded-full font-label-bold text-label-bold hover:bg-primary-fixed transition-colors">{t("Trace Your Bottle", "अपनी बोतल को ट्रेस करें")}</button>
-              <div className="absolute top-0 right-0 w-1/2 h-full opacity-20"></div>
             </div>
           </div>
         </div>

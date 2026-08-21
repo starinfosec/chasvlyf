@@ -28,7 +28,7 @@ export function ProductsPage() {
       desc: t("Real mustard oil with a strong, authentic flavor.", "असली और कड़क स्वाद वाला सरसों का तेल।"),
       benefit: t("Good for Digestion & Heart", "पाचन और दिल के लिए अच्छा"),
       badge: t("Pure Cold Pressed", "शुद्ध कोल्ड प्रेस्ड"),
-      images: ["/oils/mustard-oil.png", "https://images.unsplash.com/photo-1590779033100-9f60a05a013d?w=800&q=80"]
+      images: ["/oils/mustard-oil.png", "/oils/mustardoil.png"]
     },
     {
       id: "peanut-oil",
@@ -36,7 +36,7 @@ export function ProductsPage() {
       desc: t("Healthy and tasty oil, great for daily cooking and frying.", "स्वस्थ और स्वादिष्ट तेल, रोज के खाने और तलने के लिए बहुत अच्छा।"),
       benefit: t("Rich in Vitamins & Antioxidants", "विटामिन और एंटीऑक्सीडेंट से भरपूर"),
       badge: t("Traditional Ghani", "पारंपरिक घानी"),
-      images: ["/oils/peanut-oil.png", "https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?w=800&q=80"]
+      images: ["/oils/peanut-oil.png", "/oils/peanutoil.png"]
     },
     {
       id: "sunflower-oil",
@@ -44,7 +44,7 @@ export function ProductsPage() {
       desc: t("Light, healthy and neutral-tasting oil perfect for baking, frying, and everyday cooking.", "हल्का, स्वस्थ और बिना किसी तेज स्वाद वाला तेल।"),
       benefit: t("Vitamin E Rich", "विटामिन ई से भरपूर"),
       badge: t("Everyday Essential", "रोजमर्रा के लिए आवश्यक"),
-      images: ["/oils/sunflower-oil.png", "https://images.unsplash.com/photo-1474624000418-f018d9633e6c?w=800&q=80"]
+      images: ["/oils/sunflower-oil.png", "/oils/sunfloweroil.png"]
     },
     {
       id: "sesame-oil",
@@ -52,7 +52,23 @@ export function ProductsPage() {
       desc: t("Rich, aromatic oil traditionally used in Asian cuisine and Ayurvedic practices.", "समृद्ध, सुगंधित तेल जिसका पारंपरिक रूप से उपयोग किया जाता है।"),
       benefit: t("Antioxidant Rich", "एंटीऑक्सीडेंट से भरपूर"),
       badge: t("Ayurvedic Heritage", "आयुर्वेदिक विरासत"),
-      images: ["/oils/sesame-oil.png", "https://images.unsplash.com/photo-1611078815152-b1315801c402?w=800&q=80"]
+      images: ["/oils/sesame-oil.png", "/oils/sesameoil.png"]
+    },
+    {
+      id: "coconut-oil",
+      name: t("Coconut Oil", "नारियल का तेल"),
+      desc: t("Pure, cold-pressed coconut oil, perfect for cooking, skin, and hair care.", "शुद्ध, कोल्ड-प्रेस्ड नारियल तेल, खाना पकाने, त्वचा और बालों की देखभाल के लिए एकदम सही।"),
+      benefit: t("Multipurpose & Nourishing", "बहुउद्देश्यीय और पौष्टिक"),
+      badge: t("Virgin Cold Pressed", "वर्जिन कोल्ड प्रेस्ड"),
+      images: ["/oils/coconut-oil.png", "/oils/coconutoil.png"]
+    },
+    {
+      id: "flaxseed-oil",
+      name: t("Flaxseed Oil", "अलसी का तेल"),
+      desc: t("Nutrient-dense oil rich in Omega-3 fatty acids, ideal for heart health and immunity.", "ओमेगा-3 फैटी एसिड से भरपूर पोषक तत्वों से भरपूर तेल, हृदय स्वास्थ्य और प्रतिरक्षा के लिए आदर्श।"),
+      benefit: t("High in Omega-3", "ओमेगा-3 से भरपूर"),
+      badge: t("Heart Healthy", "हृदय के लिए स्वस्थ"),
+      images: ["/oils/flaxseed-oil.png", "/oils/flaxseedoil.png"]
     }
   ];
 
@@ -152,9 +168,9 @@ export function ProductsPage() {
                   <motion.article key={item.id} variants={itemVariants} className="group bg-surface-container-lowest rounded-3xl overflow-hidden luxury-shadow transition-all duration-500 hover:-translate-y-2 border border-surface-container">
                     <Link to={`/product/${item.id}`} className="product-image-container block cursor-pointer relative h-72 bg-surface-container-low overflow-hidden">
                       <div className="absolute inset-0 flex items-center justify-center p-8">
-                        <img className={`h-full w-auto object-contain transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
+                        <img loading="lazy" decoding="async" className={`h-full w-auto object-contain transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
                         {item.images.length > 1 && (
-                          <img className="absolute h-full w-auto object-contain transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
+                          <img loading="lazy" decoding="async" className="absolute h-full w-auto object-contain transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
                         )}
                       </div>
                       <div className="absolute top-4 left-4">
@@ -203,9 +219,9 @@ export function ProductsPage() {
                   <motion.article key={item.id} variants={itemVariants} className="group bg-surface-container-lowest rounded-3xl overflow-hidden luxury-shadow transition-all duration-500 hover:-translate-y-2 border border-surface-container">
                     <Link to={`/product/${item.id}`} className="product-image-container block cursor-pointer relative h-72 bg-surface-container-low overflow-hidden">
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <img className={`h-full w-full object-cover transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
+                        <img loading="lazy" decoding="async" className={`h-full w-full object-cover transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
                         {item.images.length > 1 && (
-                          <img className="absolute h-full w-full object-cover transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
+                          <img loading="lazy" decoding="async" className="absolute h-full w-full object-cover transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
                         )}
                       </div>
                       <div className="absolute top-4 left-4">
@@ -251,9 +267,9 @@ export function ProductsPage() {
                   <motion.article key={item.id} variants={itemVariants} className="group bg-surface-container-lowest rounded-3xl overflow-hidden luxury-shadow transition-all duration-500 hover:-translate-y-2 border border-surface-container">
                     <Link to={`/product/${item.id}`} className="product-image-container block cursor-pointer relative h-72 bg-surface-container-low overflow-hidden">
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <img className={`h-full w-full object-cover transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
+                        <img loading="lazy" decoding="async" className={`h-full w-full object-cover transition-all duration-700 group-hover:scale-110 ${item.images.length > 1 ? 'group-hover:opacity-0' : ''}`} alt={item.name} src={item.images[0]} />
                         {item.images.length > 1 && (
-                          <img className="absolute h-full w-full object-cover transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
+                          <img loading="lazy" decoding="async" className="absolute h-full w-full object-cover transition-all duration-700 scale-95 opacity-0 group-hover:scale-110 group-hover:opacity-100" alt={item.name} src={item.images[1]} />
                         )}
                       </div>
                       <div className="absolute top-4 left-4">

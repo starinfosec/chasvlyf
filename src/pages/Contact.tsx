@@ -5,13 +5,22 @@ import { motion } from "motion/react";
 
 export function Contact() {
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [lastSubmitTime, setLastSubmitTime] = useState<number>(0);
+  const [cooldownMessage, setCooldownMessage] = useState<string>("");
   const { t } = useLanguage();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const now = Date.now();
+    if (now - lastSubmitTime < 60000) { // 1 minute cooldown
+      setCooldownMessage(t("Please wait a minute before submitting again.", "कृपया फिर से सबमिट करने से पहले एक मिनट प्रतीक्षा करें।"));
+      return;
+    }
+    setCooldownMessage("");
     setStatus('submitting');
     setTimeout(() => {
         setStatus('success');
+        setLastSubmitTime(Date.now());
         (e.target as HTMLFormElement).reset();
         setTimeout(() => setStatus('idle'), 3000);
     }, 1500);
@@ -52,17 +61,17 @@ export function Contact() {
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="floating-label-group">
-                  <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="text" />
+                  <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="text" maxLength={100} />
                   <label className="floating-label font-body-md">{t("Contact Name", "संपर्क नाम")}</label>
                 </div>
                 <div className="floating-label-group">
-                  <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="text" />
+                  <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="text" maxLength={150} />
                   <label className="floating-label font-body-md">{t("Business Name", "व्यवसाय का नाम")}</label>
                 </div>
               </div>
               
               <div className="floating-label-group">
-                <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="email" />
+                <input className="w-full input-luxury font-body-md text-on-surface" placeholder=" " required type="email" maxLength={150} />
                 <label className="floating-label font-body-md">{t("Business Email Address", "व्यवसाय ईमेल पता")}</label>
               </div>
 
@@ -90,11 +99,12 @@ export function Contact() {
               </div>
 
               <div className="floating-label-group pt-4">
-                <textarea className="w-full input-luxury font-body-md text-on-surface resize-none" placeholder=" " rows={4}></textarea>
+                <textarea className="w-full input-luxury font-body-md text-on-surface resize-none" placeholder=" " rows={4} maxLength={1000}></textarea>
                 <label className="floating-label font-body-md">{t("Tell us about your distribution reach or specific interests...", "हमें अपनी वितरण पहुंच या विशिष्ट रुचियों के बारे में बताएं...")}</label>
               </div>
 
               <div className="pt-6">
+                {cooldownMessage && <p className="text-error text-sm mb-4 font-body-md">{cooldownMessage}</p>}
                 <button 
                   className={`w-full md:w-auto px-12 py-4 text-on-primary rounded-full font-label-bold text-label-bold hover:scale-105 active:scale-95 transition-all shadow-lg flex items-center justify-center gap-3 ${status === 'success' ? 'bg-secondary-container text-on-secondary-container shadow-secondary-container/20' : 'bg-primary shadow-primary/20'}`} 
                   type="submit"
@@ -140,7 +150,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="font-label-bold text-label-bold text-on-surface">{t("Registered Office", "पंजीकृत कार्यालय")}</p>
-                    <p className="font-body-md">The Gilded Press, Harvest Lane, <br />Provence Estate, France 84000</p>
+                    <p className="font-body-md">LBMLIFEWAY BHARAT MULTI HARBS PVT.LTD. <br />At Soundad (RLY) Tah Sadak/Arjuni Dist Gondia Maharashtra- 441806</p>
                   </div>
                 </div>
                 
@@ -149,9 +159,18 @@ export function Contact() {
                     <span className="material-symbols-outlined">call</span>
                   </div>
                   <div>
-                    <p className="font-label-bold text-label-bold text-on-surface">{t("Distribution Desk", "वितरण डेस्क")}</p>
-                    <p className="font-body-md">+33 4 90 12 34 56</p>
-                    <p className="font-body-md text-secondary font-bold cursor-pointer hover:underline">{t("Request a Callback", "कॉल बैक का अनुरोध करें")}</p>
+                    <p className="font-label-bold text-label-bold text-on-surface">{t("Contact Us", "संपर्क करें")}</p>
+                    <a href="tel:+918767153572" className="font-body-md hover:text-primary transition-colors">+91 8767153572</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary flex-shrink-0">
+                    <span className="material-symbols-outlined">mail</span>
+                  </div>
+                  <div>
+                    <p className="font-label-bold text-label-bold text-on-surface">{t("Email", "ईमेल")}</p>
+                    <a href="mailto:chaskilyf@gmail.com" className="font-body-md hover:text-primary transition-colors">chaskilyf@gmail.com</a>
                   </div>
                 </div>
 

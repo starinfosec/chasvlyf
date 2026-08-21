@@ -5,7 +5,7 @@ export function Wholesale() {
   const { t } = useLanguage();
   return (
     <section className="py-16 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center">
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true, margin: "-100px" }}
@@ -56,7 +56,7 @@ export function Wholesale() {
         </div>
       </motion.div>
       <div className="relative">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, scale: 0.9, rotate: 0 }}
           whileInView={{ opacity: 1, scale: 1, rotate: 3 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -65,11 +65,11 @@ export function Wholesale() {
         >
           <img
             className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
-            src="https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop"
+            src="/home3.png"
             alt="Wholesale Partner"
           />
         </motion.div>
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

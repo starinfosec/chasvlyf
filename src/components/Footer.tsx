@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
 export function Footer() {
   const { t } = useLanguage();
@@ -23,7 +23,7 @@ export function Footer() {
           <div className="flex gap-4">
             <a
               className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all"
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/184LJ9MmyL/?mibextid=wwXIfr"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -31,11 +31,19 @@ export function Footer() {
             </a>
             <a
               className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all"
-              href="https://instagram.com"
+              href="www.instagram.com/chaskilyf"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Instagram className="w-4 h-4" />
+            </a>
+            <a
+              className="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-secondary-fixed hover:text-primary transition-all"
+              href="https://www.linkedin.com/in/kanhaiyalal-kare-30b484377"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin className="w-4 h-4" />
             </a>
           </div>
         </div>
@@ -125,20 +133,27 @@ export function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="text-white font-label-bold mb-6">{t("Newsletter", "न्यूज़लेटर")}</h4>
-          <p className="text-surface-variant opacity-70 text-sm mb-4">
-            {t("Stay updated on health tips and new arrivals.", "स्वास्थ्य युक्तियों और नए आगमन पर अपडेट रहें।")}
-          </p>
-          <div className="flex">
-            <input
-              className="bg-surface-container-highest/10 border-none rounded-l-full px-4 py-2 w-full text-white placeholder-surface-variant focus:outline-none focus:ring-2 focus:ring-primary"
-              placeholder={t("Email", "ईमेल")}
-              type="email"
-            />
-            <button className="bg-secondary-fixed text-on-secondary-fixed rounded-r-full px-4 py-2 font-label-bold hover:brightness-110 transition-all cursor-pointer">
-              {t("Join", "शामिल हों")}
-            </button>
-          </div>
+          <h4 className="text-white font-label-bold mb-6">{t("Contact Info", "संपर्क जानकारी")}</h4>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-2">
+              <span className="material-symbols-outlined text-surface-variant opacity-70">location_on</span>
+              <span className="text-surface-variant opacity-70 font-body-md">
+                LBMLIFEWAY BHARAT MULTI HARBS PVT.LTD. <br/> At Soundad (RLY) Tah Sadak/Arjuni <br/>Dist Gondia Maharashtra- 441806
+              </span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-surface-variant opacity-70">call</span>
+              <a href="tel:+918767153572" className="text-surface-variant opacity-70 font-body-md hover:opacity-100 transition-opacity">+91 8767153572</a>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-surface-variant opacity-70">mail</span>
+              <a href="mailto:chaskilyf@gmail.com" className="text-surface-variant opacity-70 font-body-md hover:opacity-100 transition-opacity">chaskilyf@gmail.com</a>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="material-symbols-outlined text-surface-variant opacity-70">language</span>
+              <a href="https://www.chaskilyf.com" target="_blank" rel="noopener noreferrer" className="text-surface-variant opacity-70 font-body-md hover:opacity-100 transition-opacity">www.chaskilyf.com</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="mt-20 pt-10 border-t border-outline-variant px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-4">

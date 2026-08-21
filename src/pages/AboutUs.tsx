@@ -16,14 +16,14 @@ export function AboutUs() {
         {/* Hero Section: The Narrative Anchor */}
         <section className="relative min-h-[600px] md:min-h-[70vh] flex items-center overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <div className="w-full h-full bg-cover bg-center scale-105" style={{ backgroundImage: "url('/about-bg.png')" }}></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-background/90 via-background/60 to-transparent"></div>
+            <div className="w-full h-full bg-cover bg-center scale-105" style={{ backgroundImage: "url('/about.png')" }}></div>
+            <div className="absolute inset-0 bg-background/60"></div>
           </div>
-          <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
-            <div className="max-w-2xl mt-12 md:mt-0">
+          <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full flex flex-col items-center text-center">
+            <div className="max-w-4xl mt-12 md:mt-0 flex flex-col items-center">
               <span className="inline-block px-4 py-1 rounded-full bg-primary/10 text-primary font-label-bold text-label-bold mb-6 uppercase tracking-widest">{t("ESTABLISHED 1994", "1994 में स्थापित")}</span>
               <h1 className="font-display-md md:font-display-lg text-display-md md:text-display-lg text-on-background mb-6 md:mb-8 leading-[1.1]">{t("About Chaskilyf™", "चस्किलाइफ™ के बारे में")}</h1>
-              <p className="font-body-md md:font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-lg mb-10">{t("India is not only a land of diverse cultures and traditions; it is also home to a rich heritage of natural resources, traditional knowledge, and local food practices. Chaskilyf™ was created with the vision of connecting this heritage with the needs of modern consumers. Our purpose is to bring traditional and natural food products into modern markets through better quality, processing, hygiene, packaging, branding, and responsible business practices. We believe traditional food heritage should not simply remain in the past. It can be respected, modernized, and introduced to a new generation.", "भारत केवल विविध संस्कृतियों और परंपराओं का देश नहीं है... (Hindi translation omitted for brevity, fallback to English text).")}</p>
+              <p className="font-bold font-body-md md:font-body-lg text-body-md md:text-body-lg text-on-surface-variant max-w-4xl mb-10">{t("India is not only a land of diverse cultures and traditions; it is also home to a rich heritage of natural resources, traditional knowledge, and local food practices. Chaskilyf™ was created with the vision of connecting this heritage with the needs of modern consumers. Our purpose is to bring traditional and natural food products into modern markets through better quality, processing, hygiene, packaging, branding, and responsible business practices. We believe traditional food heritage should not simply remain in the past. It can be respected, modernized, and introduced to a new generation.", "भारत केवल विविध संस्कृतियों और परंपराओं का देश नहीं है... (Hindi translation omitted for brevity, fallback to English text).")}</p>
             </div>
           </div>
         </section>
@@ -33,7 +33,7 @@ export function AboutUs() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
             <div className="relative order-2 md:order-1">
               <div className="rounded-[2rem] overflow-hidden shadow-xl aspect-[4/5] relative">
-                <img className="w-full h-full object-cover" src="/our-story.png" alt="Artisanal oil press in 1994" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="/our-story.png" alt="Artisanal oil press in 1994" />
               </div>
               <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-3xl p-6 flex-col justify-center hidden lg:flex bg-white shadow-2xl border border-surface-variant">
                 <span className="font-display-lg text-display-lg text-primary leading-none">1994</span>
@@ -100,7 +100,7 @@ export function AboutUs() {
         {/* Sustainability Section */}
         <section className="py-16 md:py-32 relative overflow-hidden">
           <div className="absolute inset-0 z-0">
-            <img className="w-full h-full object-cover" src="/about4.png" alt="Sustainable olive grove" />
+            <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="/about4.png" alt="Sustainable olive grove" />
             <div className="absolute inset-0 bg-black/60 md:bg-black/40"></div>
           </div>
           <div className="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -135,7 +135,7 @@ export function AboutUs() {
             {/* Team Member 1 
             <div className="bg-surface-container-lowest border border-surface-variant rounded-3xl p-6 transition-all hover:shadow-lg">
               <div className="rounded-2xl overflow-hidden aspect-square mb-6">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop" alt="Rajiv Verma" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop" alt="Rajiv Verma" />
               </div>
               <h4 className="font-headline-md text-headline-md text-primary">{t("Rajiv Verma", "राजीव वर्मा")}</h4>
               <p className="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs md:text-sm mt-1">{t("Founder & Master Miller", "संस्थापक और मास्टर मिलर")}</p>
@@ -144,7 +144,7 @@ export function AboutUs() {
             {/* Team Member 2 
             <div className="bg-surface-container-lowest border border-surface-variant rounded-3xl p-6 transition-all hover:shadow-lg">
               <div className="rounded-2xl overflow-hidden aspect-square mb-6">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop" alt="Anya Sharma" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop" alt="Anya Sharma" />
               </div>
               <h4 className="font-headline-md text-headline-md text-primary">{t("Anya Sharma", "अन्या शर्मा")}</h4>
               <p className="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs md:text-sm mt-1">{t("Head of Quality", "गुणवत्ता प्रमुख")}</p>
@@ -153,7 +153,7 @@ export function AboutUs() {
             {/* Team Member 3 
             <div className="bg-surface-container-lowest border border-surface-variant rounded-3xl p-6 transition-all hover:shadow-lg">
               <div className="rounded-2xl overflow-hidden aspect-square mb-6">
-                <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?q=80&w=800&auto=format&fit=crop" alt="David Chen" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?q=80&w=800&auto=format&fit=crop" alt="David Chen" />
               </div>
               <h4 className="font-headline-md text-headline-md text-primary">{t("David Chen", "डेविड चेन")}</h4>
               <p className="font-label-bold text-label-bold text-secondary mb-3 uppercase tracking-wider text-xs md:text-sm mt-1">{t("Sustainability Dir.", "स्थिरता निदेशक")}</p>
@@ -177,7 +177,7 @@ export function AboutUs() {
               </div>
               {/* Value 2: Artisanal (Tall Image) */}
               <div className="lg:col-span-4 min-h-[300px] relative rounded-3xl overflow-hidden shadow-sm">
-                <img className="w-full h-full object-cover" src="/about5.png" alt="Tradition with a Modern Approach" />
+                <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="/about5.png" alt="Tradition with a Modern Approach" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex items-end p-8 md:p-10">
                   <h3 className="font-headline-sm text-headline-sm md:font-headline-md md:text-headline-md text-white">{t("Tradition with a Modern Approach", "आधुनिक दृष्टिकोण के साथ परंपरा")}</h3>
                 </div>
@@ -197,7 +197,7 @@ export function AboutUs() {
                   <p className="font-body-md text-body-md text-on-surface-variant leading-relaxed">{t("Working toward greater national recognition and future global opportunities for India's locally rooted food products.", "भारत के स्थानीय रूप से निहित खाद्य उत्पादों के लिए अधिक राष्ट्रीय मान्यता और भविष्य के वैश्विक अवसरों की दिशा में काम करना।")}</p>
                 </div>
                 <div className="w-full md:w-1/2 lg:w-2/5 h-48 md:h-64 rounded-2xl overflow-hidden shadow-md order-1 md:order-2">
-                  <img className="w-full h-full object-cover" src="/about6.png" alt="Built for the Future" />
+                  <img loading="lazy" decoding="async" className="w-full h-full object-cover" src="/about6.png" alt="Built for the Future" />
                 </div>
               </div>
             </div>
