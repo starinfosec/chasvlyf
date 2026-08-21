@@ -47,26 +47,27 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
+          className="flex flex-col items-center"
         >
-          <span className="inline-block py-1 px-4 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-bold text-label-bold mb-6 text-sm tracking-widest uppercase shadow-xl">
+          <span className="inline-block py-2 px-4 rounded-2xl md:rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-label-bold text-[10px] md:text-sm tracking-widest uppercase shadow-xl mb-6 max-w-[90%] md:max-w-none">
             {t("Connecting India’s Natural Food Heritage with the Modern World.", "भारत की प्राकृतिक खाद्य विरासत को आधुनिक दुनिया से जोड़ना।")}
           </span>
-          <h1 className="font-display-md md:font-display-lg text-[56px] sm:text-[72px] md:text-[90px] lg:text-[120px] leading-[1.1] mb-6 text-shadow-premium">
+          <h1 className="font-display-md md:font-display-lg text-[42px] sm:text-[56px] md:text-[90px] lg:text-[120px] leading-[1.1] mb-4 md:mb-6 text-shadow-premium">
             {t("Taste Ka", "टेस्ट का")} <br className="hidden md:block" />
             <span className="italic font-light opacity-90">{t("Naya Andaaz", "नया अंदाज़")}</span>
           </h1>
-          <p className="font-body-md md:font-body-lg text-[18px] sm:text-[20px] md:text-[24px] lg:text-[28px] opacity-90 max-w-5xl mx-auto mb-10 leading-relaxed drop-shadow-md">
+          <p className="font-body-md md:font-body-lg text-[15px] sm:text-[18px] md:text-[24px] lg:text-[28px] opacity-90 max-w-5xl mx-auto mb-8 md:mb-10 leading-relaxed drop-shadow-md px-4 md:px-0">
             {t(
               "Chaskilyf™ brings together traditional food knowledge, natural resources, local entrepreneurship, and modern quality practices to create products inspired by India's food heritage.",
               "चस्किलाइफ™ पारंपरिक खाद्य ज्ञान, प्राकृतिक संसाधनों, स्थानीय उद्यमिता और आधुनिक गुणवत्ता प्रथाओं को एक साथ लाता है ताकि भारत की खाद्य विरासत से प्रेरित उत्पाद बनाए जा सकें।"
             )}
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="bg-primary text-on-primary rounded-full px-10 py-5 font-label-bold text-lg md:text-xl hover:scale-105 transition-transform flex items-center gap-3 shadow-xl shadow-primary/20">
+          <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-6 md:px-0 max-w-[400px] sm:max-w-none mx-auto">
+            <Link to="/contact" className="bg-primary text-on-primary rounded-full px-6 py-4 md:px-10 md:py-5 font-label-bold text-base md:text-xl hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-xl shadow-primary/20 w-full sm:w-auto">
               {t("Explore Our Products", "हमारे उत्पादों का अन्वेषण करें")}{" "}
               <span className="material-symbols-outlined text-xl md:text-2xl">trending_flat</span>
             </Link>
-            <Link to="/products" className="bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full px-10 py-5 font-label-bold text-lg md:text-xl hover:bg-white/20 transition-colors shadow-xl">
+            <Link to="/products" className="bg-white/10 backdrop-blur-md border border-white/30 text-white rounded-full px-6 py-4 md:px-10 md:py-5 font-label-bold text-base md:text-xl hover:bg-white/20 transition-colors shadow-xl text-center w-full sm:w-auto">
               {t("Our Story", "हमारी कहानी")}
             </Link>
           </div>
