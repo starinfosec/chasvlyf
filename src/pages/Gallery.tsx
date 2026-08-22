@@ -11,34 +11,74 @@ export function Gallery() {
 
   const galleryImages = [
     {
-      src: "https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?q=80&w=800&auto=format&fit=crop",
-      title: t("Wood Pressing Process", "लकड़ी दबाने की प्रक्रिया"),
+      src: "/oils/mustard-oil.png",
+      title: t("Premium Mustard Oil", "प्रीमियम सरसों का तेल"),
       span: "md:col-span-2 md:row-span-2"
     },
     {
-      src: "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?q=80&w=800&auto=format&fit=crop",
-      title: t("Premium Mustard Oil", "प्रीमियम सरसों का तेल"),
-      span: "md:col-span-1 md:row-span-1"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1512485800893-b08ec1ea59b1?q=80&w=800&auto=format&fit=crop",
-      title: t("Traditional Extraction", "पारंपरिक निष्कर्षण"),
+      src: "/oils/peanut-oil.png",
+      title: t("Healthy Peanut Oil", "स्वस्थ मूंगफली का तेल"),
       span: "md:col-span-1 md:row-span-2"
     },
     {
-      src: "https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?q=80&w=800&auto=format&fit=crop",
-      title: t("Golden Sunflower Fields", "सुनहरे सूरजमुखी के खेत"),
+      src: "/oils/sunflower-oil.png",
+      title: t("Light Sunflower Oil", "हल्का सूरजमुखी का तेल"),
       span: "md:col-span-1 md:row-span-1"
     },
     {
-      src: "https://images.unsplash.com/photo-1620706857370-e1b9770e8bb1?q=80&w=800&auto=format&fit=crop",
-      title: t("Pure Olive Oil", "शुद्ध जैतून का तेल"),
-      span: "md:col-span-1 md:row-span-1"
-    },
-    {
-      src: "https://images.unsplash.com/photo-1600862080031-bb96db298c47?q=80&w=800&auto=format&fit=crop",
-      title: t("Sustainable Groves", "सतत उपवन"),
+      src: "/oils/sesame-oil.png",
+      title: t("Aromatic Sesame Oil", "सुगंधित तिल का तेल"),
       span: "md:col-span-2 md:row-span-1"
+    },
+    {
+      src: "/oils/coconut-oil.png",
+      title: t("Virgin Coconut Oil", "वर्जिन नारियल का तेल"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/oils/flaxseed-oil.png",
+      title: t("Nutrient-rich Flaxseed Oil", "पोषक तत्वों से भरपूर अलसी का तेल"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/laddoos/classic-mahua-laddo.png",
+      title: t("Classic Mahua Laddoo", "क्लासिक महुआ लड्डू"),
+      span: "md:col-span-1 md:row-span-2"
+    },
+    {
+      src: "/laddoos/chocolate-mahua-laddo.png",
+      title: t("Chocolate Mahua Laddoo", "चॉकलेट महुआ लड्डू"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/laddoos/coconut-mahua-laddo.png",
+      title: t("Coconut Mahua Laddoo", "नारियल महुआ लड्डू"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/laddoos/ilaichi-mahua-laddo.png",
+      title: t("Ilaichi Mahua Laddoo", "इलायची महुआ लड्डू"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/laddoos/peanut-mahua-laddo.png",
+      title: t("Peanut Mahua Laddoo", "मूंगफली महुआ लड्डू"),
+      span: "md:col-span-2 md:row-span-2"
+    },
+    {
+      src: "/honey.png",
+      title: t("Raw Forest Honey", "कच्चा वन शहद"),
+      span: "md:col-span-1 md:row-span-1"
+    },
+    {
+      src: "/nectar.png",
+      title: t("Pure Mahua Nectar", "शुद्ध महुआ अमृत"),
+      span: "md:col-span-1 md:row-span-2"
+    },
+    {
+      src: "/oils/mustardoil.png",
+      title: t("Cold Pressed Mustard Oil", "कोल्ड प्रेस्ड सरसों का तेल"),
+      span: "md:col-span-1 md:row-span-1"
     }
   ];
 
